@@ -3,19 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		0B9FDC112CCF754000E29825 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9FDC102CCF754000E29825 /* WidgetKit.framework */; };
+		0B9FDC132CCF754000E29825 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B9FDC122CCF754000E29825 /* SwiftUI.framework */; };
+		0B9FDC242CCF754100E29825 /* PhotoActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0B9FDC0E2CCF754000E29825 /* PhotoActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0B9FDC222CCF754100E29825 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0B9FDBF02CCF751B00E29825 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B9FDC0D2CCF754000E29825;
+			remoteInfo = PhotoActivityExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0B9FDC292CCF754100E29825 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0B9FDC242CCF754100E29825 /* PhotoActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0B9FDBF82CCF751B00E29825 /* PhotoShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9FDC0E2CCF754000E29825 /* PhotoActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B9FDC102CCF754000E29825 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0B9FDC122CCF754000E29825 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		0B9FDBFA2CCF751B00E29825 /* PhotoShare */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = PhotoShare;
-			sourceTree = "<group>";
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0B9FDC252CCF754100E29825 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0B9FDC0D2CCF754000E29825 /* PhotoActivityExtension */;
 		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		0B9FDBFA2CCF751B00E29825 /* PhotoShare */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = PhotoShare; sourceTree = "<group>"; };
+		0B9FDC142CCF754000E29825 /* PhotoActivity */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (0B9FDC252CCF754100E29825 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = PhotoActivity; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +66,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B9FDC0B2CCF754000E29825 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B9FDC132CCF754000E29825 /* SwiftUI.framework in Frameworks */,
+				0B9FDC112CCF754000E29825 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -33,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				0B9FDBFA2CCF751B00E29825 /* PhotoShare */,
+				0B9FDC142CCF754000E29825 /* PhotoActivity */,
+				0B9FDC0F2CCF754000E29825 /* Frameworks */,
 				0B9FDBF92CCF751B00E29825 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +92,18 @@
 			isa = PBXGroup;
 			children = (
 				0B9FDBF82CCF751B00E29825 /* PhotoShare.app */,
+				0B9FDC0E2CCF754000E29825 /* PhotoActivityExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0B9FDC0F2CCF754000E29825 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B9FDC102CCF754000E29825 /* WidgetKit.framework */,
+				0B9FDC122CCF754000E29825 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +116,12 @@
 				0B9FDBF42CCF751B00E29825 /* Sources */,
 				0B9FDBF52CCF751B00E29825 /* Frameworks */,
 				0B9FDBF62CCF751B00E29825 /* Resources */,
+				0B9FDC292CCF754100E29825 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0B9FDC232CCF754100E29825 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0B9FDBFA2CCF751B00E29825 /* PhotoShare */,
@@ -69,6 +132,28 @@
 			productName = PhotoShare;
 			productReference = 0B9FDBF82CCF751B00E29825 /* PhotoShare.app */;
 			productType = "com.apple.product-type.application";
+		};
+		0B9FDC0D2CCF754000E29825 /* PhotoActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B9FDC262CCF754100E29825 /* Build configuration list for PBXNativeTarget "PhotoActivityExtension" */;
+			buildPhases = (
+				0B9FDC0A2CCF754000E29825 /* Sources */,
+				0B9FDC0B2CCF754000E29825 /* Frameworks */,
+				0B9FDC0C2CCF754000E29825 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0B9FDC142CCF754000E29825 /* PhotoActivity */,
+			);
+			name = PhotoActivityExtension;
+			packageProductDependencies = (
+			);
+			productName = PhotoActivityExtension;
+			productReference = 0B9FDC0E2CCF754000E29825 /* PhotoActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,9 +168,13 @@
 					0B9FDBF72CCF751B00E29825 = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					0B9FDC0D2CCF754000E29825 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 				};
 			};
 			buildConfigurationList = 0B9FDBF32CCF751B00E29825 /* Build configuration list for PBXProject "PhotoShare" */;
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -94,18 +183,25 @@
 			);
 			mainGroup = 0B9FDBEF2CCF751B00E29825;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			productRefGroup = 0B9FDBF92CCF751B00E29825 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				0B9FDBF72CCF751B00E29825 /* PhotoShare */,
+				0B9FDC0D2CCF754000E29825 /* PhotoActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		0B9FDBF62CCF751B00E29825 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0B9FDC0C2CCF754000E29825 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +218,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0B9FDC0A2CCF754000E29825 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B9FDC232CCF754100E29825 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0B9FDC0D2CCF754000E29825 /* PhotoActivityExtension */;
+			targetProxy = 0B9FDC222CCF754100E29825 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0B9FDC052CCF751C00E29825 /* Debug */ = {
@@ -262,7 +373,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -270,10 +381,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimmyliu.PhotoShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -301,7 +413,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
@@ -309,11 +421,79 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimmyliu.PhotoShare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		0B9FDC272CCF754100E29825 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62QTRFNKCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhotoActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmyliu.PhotoShare.PhotoActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0B9FDC282CCF754100E29825 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 62QTRFNKCW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhotoActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PhotoActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jimmyliu.PhotoShare.PhotoActivity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -334,6 +514,15 @@
 			buildConfigurations = (
 				0B9FDC082CCF751C00E29825 /* Debug */,
 				0B9FDC092CCF751C00E29825 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0B9FDC262CCF754100E29825 /* Build configuration list for PBXNativeTarget "PhotoActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B9FDC272CCF754100E29825 /* Debug */,
+				0B9FDC282CCF754100E29825 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
